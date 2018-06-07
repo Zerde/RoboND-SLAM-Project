@@ -55,6 +55,7 @@
             <material name="white">
             </material>
         </visual>
+
     </link> 
     <!--base_box -->
     <link name="base_box">

@@ -338,4 +338,11 @@
         <parent link="base_cylinder">
         </parent>
     </joint>
+    <link name="camera_rgbd_frame"/>
+    <joint name="camera_frame_joint" type="fixed">
+        <origin rpy="-1.5707 0 -1.5707" xyz="0 0 0"/>
+        <parent link="camera"/>
+        <child link="camera_rgbd_frame"/>
+    </joint>
+    
 </robot>

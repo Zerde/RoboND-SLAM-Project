@@ -76,7 +76,7 @@
   </gazebo>-->
 <!-- RGBD Camera -->
     <gazebo reference="camera">
-        <sensor type="depth" name="openni_camera">
+        <sensor type="depth" name="camera1">
             <always_on>true</always_on>
             <update_rate>20.0</update_rate>
             <visualize>true</visualize>
@@ -98,7 +98,7 @@
                 <updateRate>10.0</updateRate>
                 <cameraName>camera</cameraName>
                 <frameName>camera_rgbd_frame</frameName>
-                <!-- <frameName>camera_rgbd_frame</frameName> -->
+               
                 <imageTopicName>/camera/rgb/image_raw</imageTopicName>
                 <depthImageTopicName>/camera/depth/image_raw</depthImageTopicName>
                 <pointCloudTopicName>/camera/depth/points</pointCloudTopicName>
@@ -149,7 +149,7 @@
         </noise>
       </ray>
       <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
-        <topicName>/udacity_bot/laser/scan</topicName>
+        <topicName>/scan</topicName>
         <frameName>hokuyo</frameName>
       </plugin>
     </sensor>
